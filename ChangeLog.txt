@@ -1,0 +1,122 @@
+1.2.0
+
+- New graphics from my good friend Horeus
+  (see http://www.ultimatepsp.fr/)
+- New Eboot music 
+  (see http://www.jamendo.com/en/artist/pako)
+- Cheat support (but it doesn't work with all games)
+- Finally fix issue with "Home -> Exit" !
+- Add documentation for settings in help menu
+- Improve file requester with virtual keyboard to choose
+  sequentially rom files beginning with a given letter
+- Text editor to write your own comments on games
+- Display first comment line while browsing game files
+- Add hotkey to change flicker mode
+- Memory monitoring engine to find your own cheat code !
+- Text editor to modify the global cheat.txt file
+- Zip rom files are now decompressed in memory (much faster !)
+
+1.1.4
+
+- A thumbnail image is now displayed in the file requester 
+  while selecting any file with the same name of a previously 
+  saved game.
+- In the emulator menu you can go directly to keyboard and settings
+  menu using the L-Trigger key.
+- Fix IR keyboard issue with fw >= 3.80 for FAT PSP
+
+1.1.3
+
+- Eboot music from Observe & Control, big thanks to Gnuth !
+- Rewrite many parts of the code for speed improvements, 
+  but sadly not enough to play pitfall2+ ...
+
+1.1.2
+
+- Auto-fire mode, press RTrigger+X to switch it on/off
+  useful for games such as space invaders !
+  On given games, the auto fire can't be stopped, so an 
+  option to stop it, is available in the settings menu.
+- It uses now only PSP GU for rendering
+- Speed improvements while using GU render modes
+- IR keyboard support !
+- Add .a26 as valid rom extention
+- Add several new hotkeys :
+  . settings such as fps, render mode, auto fire speed
+    can now be directly modified inside the emulator
+    (no need to enter in the settings menu)
+  . quick save / quick load current state
+    (no need to enter in the main menu)
+- New speed limiter options in settings menu
+- RTrigger/LTrigger keys can be used in the keyboard
+  settings menu to navigate between Normal, LTrigger 
+  and  RTrigger compose mapping.
+- Analog pad can be used in the rom file requester
+- Default Hotkeys can now be set in the keyboard mapping menu
+  (useful to add hotkeys on existing/previous keyboard files)
+- Bug fix in the low battery watchdog
+- Add vsync option
+- Increase memory heap size in 3.x
+
+1.1.1
+
+- never released
+
+1.1.0
+
+- Display and save thumbnail images for each save state
+- New graphics 
+- Option to prevent the blue led to be displayed when 
+  L or R are pressed
+
+1.0.6
+
+- Compatible with custom firmwares 3.x and PSP-slim
+- Add a simple intro splash screen  
+- Support iso8859-1 fonts in print text functions 
+  (might be useful to translate psp2600 menus in german, french ...)
+- Bug fix in file requester
+
+1.0.5
+
+- New render max mode
+- Fix GU init issue
+
+1.0.4
+
+- A new graphical engine with new smoother render modes !
+  It uses now the PSP GU for rendering, it does not run faster, 
+  but it's a lot smoother !
+  Old "soft" render modes are still available, because there are
+  a bit faster.
+- Multiple keyboard mapping feature (Thanks to Pou-chan) :
+  You can now toggle between 3 different keyboard mapping using 
+  LTrigger and RTrigger keys
+
+1.0.3
+
+- Bug fix in the render mode Max and x1.25
+- New default mapping for the keyboard in order to
+  use the analog/digital swap feature.
+
+
+1.0.2
+
+- Merge the code from Stella v2.2 (replacing Stella v2.0 b1)
+- Add several Anti-Flicker modes such as :
+  * Phosphor (from Stella v2.2), nice but CPU consuming 
+  * Simple, very fast and suitable for black background games
+  * Average, it computes average colors between two frames
+- Add paddle support, using Left / Right keys or analog Pad
+- Fix the sound speed/accuracy (For a better quality, set the
+  PSP clock to 333Mhz in the settings menu)
+- Bug fix in Rom file requester 
+  * PSP hangs when the rom list was big and already sorted
+- Remove Gelon's name from graphics stuff (as he wants to)  
+- Add Aenea as the author of the first PSP port
+  (i'm sorry for this mistake !)
+
+
+1.0.1
+
+- Intial release
