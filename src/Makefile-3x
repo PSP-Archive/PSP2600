@@ -132,7 +132,7 @@ PSP_FW_VERSION=500
 PSP2600_VERSION=1.2.0-fw5x
 
 # -funroll-loops 
-MORE_CFLAGS = -Iemucore -Icommon -Ipsp \
+MORE_CFLAGS = -G0 -Iemucore -Icommon -Ipsp \
  -ffast-math -fomit-frame-pointer \
  -fno-strength-reduce -finline-functions \
  -fsingle-precision-constant \
@@ -147,10 +147,10 @@ MORE_CFLAGS = -Iemucore -Icommon -Ipsp \
 
 OPTIM_CFLAGS= -O2
 
-CFLAGS = $(DEFAULT_CFLAGS) $(MORE_CFLAGS)
-CXXFLAGS = $(DEFAULT_CFLAGS) $(MORE_CFLAGS) -fno-exceptions -fno-rtti
+CFLAGS = $(DEFAULT_CFLAGS) $(MORE_CFLAGS) 
+CXXFLAGS = $(DEFAULT_CFLAGS) $(MORE_CFLAGS) -fexceptions -fno-rtti
 
-LIBS += -lstdc++ -lpspirkeyb -lpsppower -lSDL_image -lSDL -lpng -ljpeg -lpspaudio -lpspgu -lpsphprm -lz -lm
+LIBS += -lstdc++ -lpspirkeyb -lpsppower -lSDL_image -lSDL -lGL -lpspirkeyb -lpspvfpu -lpsprtc -lpng -ljpeg -lpspaudio -lpspgu -lpsphprm -lz -lm
 
 BUILD_PRX=1
 

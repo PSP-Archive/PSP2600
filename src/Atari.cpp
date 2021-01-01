@@ -28,6 +28,7 @@
 #include <pspctrl.h>
 #include <psptypes.h>
 #include <png.h>
+#include <zlib.h>
 
 #include "global.h"
 #include "Atari.h"
